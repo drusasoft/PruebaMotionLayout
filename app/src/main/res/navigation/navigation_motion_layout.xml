@@ -7,6 +7,17 @@
     <fragment
         android:id="@+id/fragmentMainMenu"
         android:name="com.exmaple.pruebamotionlayout.fragments.FragmentMainMenu"
-        android:label="FragmentMainMenu" />
+        android:label="FragmentMainMenu">
+
+        <action
+            android:id="@+id/irFragmentAnimacionBasica"
+            app:destination="@id/fragmentAnimacionBasica"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentAnimacionBasica"
+        android:name="com.exmaple.pruebamotionlayout.fragments.FragmentAnimacionBasica"
+        android:label="FragmentAnimacionBasica" />
 
 </navigation>
