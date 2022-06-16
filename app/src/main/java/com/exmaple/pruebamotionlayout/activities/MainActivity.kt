@@ -2,6 +2,7 @@ package com.exmaple.pruebamotionlayout.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
@@ -37,8 +38,11 @@ class MainActivity : AppCompatActivity()
 
             when(destination.id)
             {
-                controller.graph.startDestinationId->{supportActionBar!!.title = "Main Menu"}
-                R.id.fragmentAnimacionBasica->{supportActionBar!!.title = "Prueba Animacion"}
+                controller.graph.startDestinationId->{ supportActionBar!!.title = "Main Menu" }
+                R.id.fragmentAnimacionBasica->{ supportActionBar!!.title = "Prueba Animacion" }
+                R.id.fragmentAnimacionDragEvents->{ supportActionBar!!.title = "Animacion Drag Event"}
+                R.id.fragmentAnimacionModificarPath->{ supportActionBar!!.title = "Prueba Modificar Path" }
+                R.id.fragmentAnimacionPathComplejo->{ supportActionBar!!.title = "Prueba Path Complejo" }
             }
         }
 

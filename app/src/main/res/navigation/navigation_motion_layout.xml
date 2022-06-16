@@ -12,6 +12,15 @@
         <action
             android:id="@+id/irFragmentAnimacionBasica"
             app:destination="@id/fragmentAnimacionBasica"/>
+        <action
+            android:id="@+id/irFragmentAnimacionDragEvents"
+            app:destination="@id/fragmentAnimacionDragEvents" />
+        <action
+            android:id="@+id/irFragmentAnimacionModificarPath"
+            app:destination="@id/fragmentAnimacionModificarPath" />
+        <action
+            android:id="@+id/irFragmentAnimacionPathComplejo"
+            app:destination="@id/fragmentAnimacionPathComplejo" />
 
     </fragment>
 
@@ -19,5 +28,20 @@
         android:id="@+id/fragmentAnimacionBasica"
         android:name="com.exmaple.pruebamotionlayout.fragments.FragmentAnimacionBasica"
         android:label="FragmentAnimacionBasica" />
+
+    <fragment
+        android:id="@+id/fragmentAnimacionDragEvents"
+        android:name="com.exmaple.pruebamotionlayout.fragments.FragmentAnimacionDragEvents"
+        android:label="FragmentAnimacionDragEvents" />
+
+    <fragment
+        android:id="@+id/fragmentAnimacionModificarPath"
+        android:name="com.exmaple.pruebamotionlayout.fragments.FragmentAnimacionModificarPath"
+        android:label="FragmentAnimacionModificarPath" />
+
+    <fragment
+        android:id="@+id/fragmentAnimacionPathComplejo"
+        android:name="com.exmaple.pruebamotionlayout.fragments.FragmentAnimacionPathComplejo"
+        android:label="FragmentAnimacionPathComplejo" />
 
 </navigation>

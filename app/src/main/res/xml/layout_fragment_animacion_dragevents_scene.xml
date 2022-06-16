@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start">
+        <OnSwipe motion:touchAnchorId="@id/imgStart_central"/>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:id="@+id/imgStart_izq"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:alpha="0.0" />
+
+        <Constraint
+            android:id="@+id/imgStart_central"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:alpha="0.0" />
+
+        <Constraint
+            android:id="@+id/imgStart_drch"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:alpha="0.0" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+            android:id="@+id/imgStart_izq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1.0"
+            motion:layout_constraintHorizontal_chainStyle="packed"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toStartOf="@id/imgStart_central"
+            motion:layout_constraintTop_toBottomOf="@id/textInfo"/>
+
+        <Constraint
+            android:id="@+id/imgStart_central"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1.0"
+            motion:layout_constraintStart_toEndOf="@id/imgStart_izq"
+            motion:layout_constraintEnd_toStartOf="@id/imgStart_drch"
+            motion:layout_constraintTop_toBottomOf="@id/textInfo"/>
+
+        <Constraint
+            android:id="@+id/imgStart_drch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1.0"
+            motion:layout_constraintStart_toEndOf="@id/imgStart_central"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/textInfo"/>
+
+    </ConstraintSet>
+
+</MotionScene>
