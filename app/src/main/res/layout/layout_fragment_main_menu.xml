@@ -33,7 +33,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.419" />
+        app:layout_constraintVertical_bias="0.319" />
 
     <TextView
         android:id="@+id/txtOpcion_2"
@@ -85,5 +85,41 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtOpcion_3" />
+
+
+    <TextView
+        android:id="@+id/txtOpcion_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:text="Animacion Prueba Cambio Atributos"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/btn_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOpcion_4" />
+
+
+    <TextView
+        android:id="@+id/txtOpcion_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:text="Animacion Prueba Customs Atributos"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/btn_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOpcion_5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

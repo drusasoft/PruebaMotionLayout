@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="2000">
+
+        <!--En este caso se ha modificado el Path para que tenga que pasar por tres puntos mas (KeyPosition) situados situados en distintas posisicones respecto al parente
+        al hacer esto se hace que la animacion tenga un movimiento mas complejo-->
+
+       <KeyFrameSet>
+           <KeyPosition
+               motion:motionTarget="@+id/imgLuna"
+               motion:framePosition="25"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.1"
+               motion:percentY="0.6"/>
+
+           <KeyPosition
+               motion:motionTarget="@+id/imgLuna"
+               motion:framePosition="50"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.3"
+               motion:percentY="0.5"/>
+
+           <KeyPosition
+               motion:motionTarget="@+id/imgLuna"
+               motion:framePosition="75"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.1"
+               motion:percentY="0.6" />
+
+       </KeyFrameSet>
+
+        <OnClick motion:targetId="@id/imgLuna" />
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgLuna"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="24dp"/>
+        </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_editor_absoluteY="671dp"
+            android:id="@+id/imgLuna"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+        </ConstraintSet>
+
+</MotionScene>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="2000">
+
+        <!--Para crear esta animacion añado dos KeyAttributes uno situado en el punto medio de la animacion
+        en el cual se modifican los atributos scaleX, scaleY y rotation para que la imagen se agrande y rote 360 grandes
+        y otro situado en la parte final de la animacion en el que animacion vuelve a su rotacion y tamaño original-->
+
+        <!--tambie añado un KeyAttribute para el textView view y que se muestre a partir de la posicion 85 de la animacion-->
+
+       <KeyFrameSet>
+
+           <KeyPosition
+               motion:motionTarget="@+id/imgLuna"
+               motion:framePosition="50"
+               motion:keyPositionType="parentRelative"
+               motion:percentY="0.5"/>
+
+           <KeyAttribute
+               motion:motionTarget="@+id/imgLuna"
+               motion:framePosition="50"
+               android:scaleX="2.0"
+               android:scaleY="2.0"
+               android:rotation="360"/>
+
+           <KeyAttribute
+               motion:motionTarget="@+id/imgLuna"
+               motion:framePosition="100"
+               android:rotation="720"/>
+
+           <KeyAttribute
+               motion:motionTarget="@+id/textView2"
+               motion:framePosition="85"
+               android:alpha="0.5"/>
+
+       </KeyFrameSet>
+
+        <OnClick motion:targetId="@id/imgLuna" />
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imgLuna"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="24dp"/>
+
+        <Constraint
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:alpha="0.0" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imgLuna"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_editor_absoluteY="647dp"/>
+
+    </ConstraintSet>
+
+</MotionScene>

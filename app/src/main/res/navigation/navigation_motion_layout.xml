@@ -14,34 +14,53 @@
             app:destination="@id/fragmentAnimacionBasica"/>
         <action
             android:id="@+id/irFragmentAnimacionDragEvents"
-            app:destination="@id/fragmentAnimacionDragEvents" />
+            app:destination="@id/fragmentAnimacionDragEvents"/>
         <action
             android:id="@+id/irFragmentAnimacionModificarPath"
-            app:destination="@id/fragmentAnimacionModificarPath" />
+            app:destination="@id/fragmentAnimacionModificarPath"/>
+
         <action
             android:id="@+id/irFragmentAnimacionPathComplejo"
-            app:destination="@id/fragmentAnimacionPathComplejo" />
+            app:destination="@id/fragmentAnimacionPathComplejo"/>
+
+        <action
+            android:id="@+id/irFragmentAnimacionCambioAtributos"
+            app:destination="@id/fragmentAnimacionCambioAtributos"/>
+
+        <action
+            android:id="@+id/irFragmentAnimacionAtributosCustoms"
+            app:destination="@id/fragmentAnimacionAtributosCustoms"/>
 
     </fragment>
 
     <fragment
         android:id="@+id/fragmentAnimacionBasica"
         android:name="com.exmaple.pruebamotionlayout.fragments.FragmentAnimacionBasica"
-        android:label="FragmentAnimacionBasica" />
+        android:label="FragmentAnimacionBasica"/>
 
     <fragment
         android:id="@+id/fragmentAnimacionDragEvents"
         android:name="com.exmaple.pruebamotionlayout.fragments.FragmentAnimacionDragEvents"
-        android:label="FragmentAnimacionDragEvents" />
+        android:label="FragmentAnimacionDragEvents"/>
 
     <fragment
         android:id="@+id/fragmentAnimacionModificarPath"
         android:name="com.exmaple.pruebamotionlayout.fragments.FragmentAnimacionModificarPath"
-        android:label="FragmentAnimacionModificarPath" />
+        android:label="FragmentAnimacionModificarPath"/>
 
     <fragment
         android:id="@+id/fragmentAnimacionPathComplejo"
         android:name="com.exmaple.pruebamotionlayout.fragments.FragmentAnimacionPathComplejo"
-        android:label="FragmentAnimacionPathComplejo" />
+        android:label="FragmentAnimacionPathComplejo"/>
+
+    <fragment
+        android:id="@+id/fragmentAnimacionCambioAtributos"
+        android:name="com.exmaple.pruebamotionlayout.fragments.FragmentAnimacionCambioAtributos"
+        android:label="FragmentAnimacionCambioAtributos"/>
+
+    <fragment
+        android:id="@+id/fragmentAnimacionAtributosCustoms"
+        android:name="com.exmaple.pruebamotionlayout.fragments.FragmentAnimacionAtributosCustoms"
+        android:label="FragmentAnimacionAtributosCustoms"/>
 
 </navigation>

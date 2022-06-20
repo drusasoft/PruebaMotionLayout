@@ -39,6 +39,8 @@ class FragmentMainMenu:Fragment()
         binding.txtOpcion2.setOnClickListener { navController.navigate(R.id.irFragmentAnimacionDragEvents) }
         binding.txtOpcion3.setOnClickListener { navController.navigate(R.id.irFragmentAnimacionModificarPath) }
         binding.txtOpcion4.setOnClickListener { navController.navigate(R.id.irFragmentAnimacionPathComplejo) }
+        binding.txtOpcion5.setOnClickListener { navController.navigate(R.id.irFragmentAnimacionCambioAtributos) }
+        binding.txtOpcion6.setOnClickListener { navController.navigate(R.id.irFragmentAnimacionAtributosCustoms) }
 
         //***************************Fin ClickListeners***************************
 

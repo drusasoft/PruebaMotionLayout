@@ -6,16 +6,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    app:layoutDescription="@xml/layout_fragment_path_complejo_scene"
+    app:layoutDescription="@xml/layout_fragment_animacion_cambio_atributos_scene"
     motion:motionDebug="SHOW_PATH">
-
-    <!--Con la Instruccion motion:motionDebug="SHOW_PATH", se muestra el camino (path) que realiza la animacion durante la ejecucion de la Aplicacion-->
 
     <ImageView
         android:id="@+id/imgLuna"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_moon"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="647dp" />
+
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_moon"
-        tools:layout_editor_absoluteY="671dp" />
+        android:layout_marginStart="8dp"
+        android:text="Soy un Fracasado"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

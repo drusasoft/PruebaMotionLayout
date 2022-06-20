@@ -12,7 +12,7 @@ class FragmentAnimacionPathComplejo:Fragment()
 
     private lateinit var binding: LayoutFragmentPathComplejoBinding
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View?
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View
     {
         binding = LayoutFragmentPathComplejoBinding.inflate(inflater, container, false)
 
