@@ -5,16 +5,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.exmaple.pruebamotionlayout.databinding.LayoutFragmentAnimacionCambioAtributosBinding
+import com.exmaple.pruebamotionlayout.databinding.LayoutFragmentAnimacionDrageventsPathcomplejoBinding
 
-class FragmentAnimacionCambioAtributos:Fragment()
+class FragmentAnimacionDragEventsPathComplejo:Fragment()
 {
-
-    private lateinit var binding: LayoutFragmentAnimacionCambioAtributosBinding
+    private lateinit var binding: LayoutFragmentAnimacionDrageventsPathcomplejoBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View
     {
-        binding = LayoutFragmentAnimacionCambioAtributosBinding.inflate(inflater, container, false)
+        binding = LayoutFragmentAnimacionDrageventsPathcomplejoBinding.inflate(inflater, container, false)
 
         return binding.root
     }

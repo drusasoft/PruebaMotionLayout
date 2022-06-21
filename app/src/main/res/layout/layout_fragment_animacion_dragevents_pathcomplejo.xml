@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:motion="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    app:layoutDescription="@xml/layout_fragment_animacion_atributos_customs_scene"
+    app:layoutDescription="@xml/layout_fragment_animacion_dragevents_pathcomplejo_scene"
     motion:motionDebug="SHOW_PATH">
 
     <ImageView
         android:id="@+id/imgLuna"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:src="@drawable/ic_moon"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="647dp" />
+        android:src="@drawable/ic_moon" />
 
     <TextView
         android:id="@+id/textView2"
@@ -23,8 +21,6 @@
         android:layout_height="wrap_content"
         android:text="Soy un Fracasado"
         android:textColor="@color/white"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="715dp" />
+        android:textStyle="bold" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

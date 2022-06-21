@@ -12,9 +12,11 @@
         <action
             android:id="@+id/irFragmentAnimacionBasica"
             app:destination="@id/fragmentAnimacionBasica"/>
+
         <action
             android:id="@+id/irFragmentAnimacionDragEvents"
             app:destination="@id/fragmentAnimacionDragEvents"/>
+
         <action
             android:id="@+id/irFragmentAnimacionModificarPath"
             app:destination="@id/fragmentAnimacionModificarPath"/>
@@ -30,6 +32,13 @@
         <action
             android:id="@+id/irFragmentAnimacionAtributosCustoms"
             app:destination="@id/fragmentAnimacionAtributosCustoms"/>
+
+        <action
+            android:id="@+id/irFragmentAnimacionDragEventsPathComplejo"
+            app:destination="@id/fragmentAnimacionDragEventsPathComplejo"/>
+        <action
+            android:id="@+id/irPruebaCoordinatorLayout"
+            app:destination="@id/pruebaCoordinatorLayout" />
 
     </fragment>
 
@@ -62,5 +71,14 @@
         android:id="@+id/fragmentAnimacionAtributosCustoms"
         android:name="com.exmaple.pruebamotionlayout.fragments.FragmentAnimacionAtributosCustoms"
         android:label="FragmentAnimacionAtributosCustoms"/>
+
+    <fragment
+        android:id="@+id/fragmentAnimacionDragEventsPathComplejo"
+        android:name="com.exmaple.pruebamotionlayout.fragments.FragmentAnimacionDragEventsPathComplejo"
+        android:label="FragmentAnimacionDragEventsPathComplejo" />
+    <activity
+        android:id="@+id/pruebaCoordinatorLayout"
+        android:name="com.exmaple.pruebamotionlayout.activities.PruebaCoordinatorLayout"
+        android:label="PruebaCoordinatorLayout" />
 
 </navigation>

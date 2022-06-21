@@ -41,6 +41,8 @@ class FragmentMainMenu:Fragment()
         binding.txtOpcion4.setOnClickListener { navController.navigate(R.id.irFragmentAnimacionPathComplejo) }
         binding.txtOpcion5.setOnClickListener { navController.navigate(R.id.irFragmentAnimacionCambioAtributos) }
         binding.txtOpcion6.setOnClickListener { navController.navigate(R.id.irFragmentAnimacionAtributosCustoms) }
+        binding.txtOpcion7.setOnClickListener { navController.navigate(R.id.irFragmentAnimacionDragEventsPathComplejo) }
+        binding.txtOpcion8.setOnClickListener { navController.navigate(R.id.irPruebaCoordinatorLayout) }
 
         //***************************Fin ClickListeners***************************
 
