@@ -36,9 +36,14 @@
         <action
             android:id="@+id/irFragmentAnimacionDragEventsPathComplejo"
             app:destination="@id/fragmentAnimacionDragEventsPathComplejo"/>
+
         <action
             android:id="@+id/irPruebaCoordinatorLayout"
             app:destination="@id/pruebaCoordinatorLayout" />
+
+        <action
+            android:id="@+id/irFragmentPruebaMia"
+            app:destination="@id/fragmentPruebaMia" />
 
     </fragment>
 
@@ -76,9 +81,15 @@
         android:id="@+id/fragmentAnimacionDragEventsPathComplejo"
         android:name="com.exmaple.pruebamotionlayout.fragments.FragmentAnimacionDragEventsPathComplejo"
         android:label="FragmentAnimacionDragEventsPathComplejo" />
+
     <activity
         android:id="@+id/pruebaCoordinatorLayout"
         android:name="com.exmaple.pruebamotionlayout.activities.PruebaCoordinatorLayout"
         android:label="PruebaCoordinatorLayout" />
+
+    <fragment
+        android:id="@+id/fragmentPruebaMia"
+        android:name="com.exmaple.pruebamotionlayout.fragments.FragmentPruebaMia"
+        android:label="FragmentPruebaMia" />
 
 </navigation>

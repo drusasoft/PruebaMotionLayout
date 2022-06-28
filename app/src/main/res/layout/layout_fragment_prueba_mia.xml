@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motion_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/layout_fragment_prueba_mia_scene"
+    app:motionDebug="SHOW_PATH">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/indigo_500"
+        app:rippleColor="@color/white"
+        app:srcCompat="@android:drawable/ic_menu_zoom"
+        app:tint="@color/white"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/indigo_500"
+        app:rippleColor="@color/white"
+        app:srcCompat="@android:drawable/ic_menu_call"
+        app:tint="@color/white"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/indigo_500"
+        app:rippleColor="@color/white"
+        app:srcCompat="@android:drawable/ic_menu_compass"
+        app:tint="@color/white"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/indigo_500"
+        app:rippleColor="@color/white"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        app:tint="@color/white"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="338dp" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

@@ -46,6 +46,7 @@ class MainActivity : AppCompatActivity()
                 R.id.fragmentAnimacionCambioAtributos->{ supportActionBar!!.title = "Animacion con Atributos" }
                 R.id.fragmentAnimacionAtributosCustoms->{ supportActionBar!!.title = "Prueba Atributos Customs"}
                 R.id.fragmentAnimacionDragEventsPathComplejo->{ supportActionBar!!.title = "Drag y Path Complejo"}
+                R.id.fragmentPruebaMia->{ supportActionBar!!.title = "Prueba Mia" }
             }
         }
 
